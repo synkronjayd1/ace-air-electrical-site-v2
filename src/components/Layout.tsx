@@ -50,11 +50,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-20 items-center">
             <Link to="/" className="flex items-center">
-  <img
-    src="/images/logo.jpg"
-    alt="Ace Air & Electrical Adelaide"
-    className="h-14 md:h-16 w-auto"
-  />
+  <img 
+  src="/images/logo.jpg" 
+  alt="Ace Air & Electrical Adelaide" 
+  className="h-12 md:h-14 w-auto object-contain"
+/>
 </Link>
 
             {/* Desktop Nav */}
