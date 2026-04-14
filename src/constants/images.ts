@@ -1,0 +1,20 @@
+export const IMAGES = {
+  hero: "/images/hero-ac.jpg",
+  heroBg: "/images/hero-bg.jpg",
+  splitSystem: "/images/split-system.jpg",
+  ducted: "/images/ducted-system.jpg",
+  multiSplit: "/images/multi-split.jpg",
+  service: "/images/ac-service.jpg",
+  electrical: "/images/electrical-work.jpg",
+  about: "/images/about-team.jpg",
+  aboutGrid1: "/images/about-grid-1.jpg",
+  aboutGrid2: "/images/about-grid-2.jpg",
+  aboutGrid3: "/images/about-grid-3.jpg",
+  aboutGrid4: "/images/about-grid-4.jpg",
+  map: "/images/map-placeholder.jpg",
+  // Avatars for testimonials
+  avatar1: "/images/avatar-1.jpg",
+  avatar2: "/images/avatar-2.jpg",
+  avatar3: "/images/avatar-3.jpg",
+  avatar4: "/images/avatar-4.jpg",
+};
