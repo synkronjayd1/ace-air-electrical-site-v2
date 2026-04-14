@@ -114,11 +114,11 @@ export default function Home() {
             >
               <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl bg-gray-100 aspect-[4/3]">
                 <img 
-                  src={IMAGES.hero} 
-                  alt="Premium Air Conditioning Installation" 
-                  className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
-                />
+  src={IMAGES.hero} 
+  alt="Premium Air Conditioning Installation" 
+  className="w-full h-full object-cover contrast-110 brightness-95 saturate-105"
+  referrerPolicy="no-referrer"
+/>
               </div>
               {/* Floating Badge */}
               <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl z-20 flex items-center gap-4 border border-gray-100">
