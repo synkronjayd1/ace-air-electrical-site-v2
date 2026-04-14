@@ -146,15 +146,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
             <div className="space-y-6">
-              <Link to="/" className="flex items-center gap-2">
-                <div className="bg-white/10 p-2 rounded-lg">
-                  <Award className="text-brand-orange" size={24} />
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-xl font-display font-bold leading-none tracking-tight">ACE AIR &</span>
-                  <span className="text-sm font-display font-semibold text-brand-orange leading-none tracking-wider">ELECTRICAL ADELAIDE</span>
-                </div>
-              </Link>
+             <Link to="/" className="flex items-center">
+  <img
+    src="/images/logo.jpg"
+    alt="Ace Air & Electrical Adelaide"
+    className="h-12 md:h-14 w-auto object-contain"
+  />
+</Link>
               <p className="text-gray-400 text-sm leading-relaxed">
                 Adelaide's trusted experts for premium air conditioning and electrical services. Family-owned with 10+ years of experience.
               </p>
