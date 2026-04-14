@@ -51,7 +51,7 @@ export default function Home() {
     <div className="overflow-hidden">
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center pt-20 pb-16 overflow-hidden">
-        <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_left,rgba(59,130,246,0.10),transparent_32%),linear-gradient(90deg,#f8fbff_0%,#edf3f8_48%,#f8fafc_100%)]" />
+        <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_left,rgba(59,130,246,0.18),transparent_35%),linear-gradient(90deg,#f8fbff_0%,#edf3f8_48%,#f8fafc_100%)]" />
 <div className="absolute inset-0 z-0 bg-gradient-to-r from-[#0f172a]/6 via-transparent to-white/10" />
         
 
