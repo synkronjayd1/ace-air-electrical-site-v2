@@ -53,7 +53,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
   <img 
   src="/images/logo.jpg" 
   alt="logo" 
-  className="h-16 w-48 object-contain bg-red-200"
+  className="h-20 scale-150 origin-left w-auto"
 />
 </Link>
 
