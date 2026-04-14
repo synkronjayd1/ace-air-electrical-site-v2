@@ -52,8 +52,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
             <Link to="/" className="flex items-center">
   <img 
   src="/images/logo.jpg" 
-  alt="Ace Air & Electrical Adelaide" 
-  className="h-12 md:h-14 w-auto object-contain"
+  alt="logo" 
+  className="h-16 w-48 object-contain bg-red-200"
 />
 </Link>
 
