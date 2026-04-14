@@ -86,7 +86,7 @@ export default function Contact() {
                 </p>
                 <div className="flex items-center gap-2 text-brand-blue font-bold text-sm">
                   <CheckCircle2 size={16} />
-                  License # PGE 324561
+                  
                 </div>
               </div>
             </div>
