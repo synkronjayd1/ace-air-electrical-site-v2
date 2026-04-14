@@ -53,15 +53,7 @@ export default function Home() {
       <section className="relative min-h-[90vh] flex items-center pt-20 pb-16 overflow-hidden">
         <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_left,rgba(59,130,246,0.10),transparent_32%),linear-gradient(90deg,#f8fbff_0%,#edf3f8_48%,#f8fafc_100%)]" />
 <div className="absolute inset-0 z-0 bg-gradient-to-r from-[#0f172a]/6 via-transparent to-white/10" />
-        <div className="absolute inset-0 z-0">
-          <img 
-            src={IMAGES.heroBg} 
-            alt="Modern Air Conditioning Background" 
-            className="w-full h-full object-cover opacity-10"
-            referrerPolicy="no-referrer"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-white via-white/80 to-white"></div>
-        </div>
+        
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
