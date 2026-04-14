@@ -75,7 +75,7 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <a 
                   href="tel:+61423536561" 
-                  className="bg-brand-navy text-white px-8 py-4 rounded-full font-bold text-lg flex items-center justify-center gap-2 hover:bg-brand-navy/90 transition-all shadow-xl shadow-brand-navy/20"
+                  className="bg-brand-orange text-white px-8 py-4 rounded-full font-bold text-lg flex items-center justify-center gap-2 hover:bg-brand-orange/90 transition-all shadow-xl shadow-brand-orange/30"
                 >
                   <Phone size={20} />
                   Call +61 423 536 561
