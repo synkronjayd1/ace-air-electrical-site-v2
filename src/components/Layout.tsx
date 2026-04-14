@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Phone, Mail, MapPin, Menu, X, Facebook, Instagram, Shield, Clock, Award } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { cn } from '@/src/lib/utils';
+import { IMAGES } from '@/src/constants/images';
 
 interface NavItem {
   label: string;
@@ -48,15 +49,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-20 items-center">
-            <Link to="/" className="flex items-center gap-2">
-              <div className="bg-brand-navy p-2 rounded-lg">
-                <Award className="text-brand-orange" size={24} />
-              </div>
-              <div className="flex flex-col">
-                <span className="text-xl font-display font-bold leading-none tracking-tight">ACE AIR &</span>
-                <span className="text-sm font-display font-semibold text-brand-orange leading-none tracking-wider">ELECTRICAL ADELAIDE</span>
-              </div>
-            </Link>
+            <Link to="/" className="flex items-center">
+  <img 
+    src={IMAGES.logo} 
+    alt="Ace Air & Electrical Adelaide" 
+    className="h-10 md:h-12 w-auto"
+  />
+</Link>
 
             {/* Desktop Nav */}
             <div className="hidden md:flex items-center gap-8">
