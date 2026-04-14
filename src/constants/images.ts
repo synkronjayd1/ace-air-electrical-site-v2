@@ -17,4 +17,5 @@ export const IMAGES = {
   avatar2: "/images/avatar-2.jpg",
   avatar3: "/images/avatar-3.jpg",
   avatar4: "/images/avatar-4.jpg",
+  logo: "/images/logo.png",
 };
