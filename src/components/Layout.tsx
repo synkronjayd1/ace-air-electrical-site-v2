@@ -53,7 +53,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
   <img
     src="/images/logo.jpg"
     alt="Ace Air & Electrical Adelaide"
-    className="h-10 md:h-12 w-auto"
+    className="h-14 md:h-16 w-auto"
   />
 </Link>
 
