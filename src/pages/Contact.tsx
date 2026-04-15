@@ -4,7 +4,12 @@ import { Phone, Mail, MapPin, Send, Clock, Shield, CheckCircle2 } from 'lucide-r
 import { IMAGES } from '@/src/constants/images';
 
 export default function Contact() {
-  const [formStatus, setFormStatus] = React.useState<'idle' | 'submitting' | 'success'>('idle');
+  const [formStatus, setFormStatus] = React.useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
+const [name, setName] = React.useState('');
+const [phone, setPhone] = React.useState('');
+const [service, setService] = React.useState('Split System Installation');
+const [suburb, setSuburb] = React.useState('');
+const [message, setMessage] = React.useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
