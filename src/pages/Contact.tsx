@@ -146,27 +146,35 @@ const [message, setMessage] = React.useState('');
                       <div className="space-y-2">
                         <label className="text-sm font-bold text-brand-navy uppercase tracking-wider ml-1">Full Name</label>
                         <input 
-                          required
-                          type="text" 
-                          placeholder="John Doe"
-                          className="w-full px-6 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:border-brand-blue focus:bg-white outline-none transition-all"
-                        />
+  required
+  type="text" 
+  placeholder="John Doe"
+  value={name}
+  onChange={(e) => setName(e.target.value)}
+  className="w-full px-6 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:border-brand-blue focus:bg-white outline-none transition-all"
+/>
                       </div>
                       <div className="space-y-2">
                         <label className="text-sm font-bold text-brand-navy uppercase tracking-wider ml-1">Phone Number</label>
                         <input 
-                          required
-                          type="tel" 
-                          placeholder="0400 000 000"
-                          className="w-full px-6 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:border-brand-blue focus:bg-white outline-none transition-all"
-                        />
+  required
+  type="tel" 
+  placeholder="0400 000 000"
+  value={phone}
+  onChange={(e) => setPhone(e.target.value)}
+  className="w-full px-6 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:border-brand-blue focus:bg-white outline-none transition-all"
+/>
                       </div>
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-8">
                       <div className="space-y-2">
                         <label className="text-sm font-bold text-brand-navy uppercase tracking-wider ml-1">Service Required</label>
-                        <select className="w-full px-6 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:border-brand-blue focus:bg-white outline-none transition-all appearance-none">
+                        <select
+  value={service}
+  onChange={(e) => setService(e.target.value)}
+  className="w-full px-6 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:border-brand-blue focus:bg-white outline-none transition-all appearance-none"
+>
                           <option>Split System Installation</option>
                           <option>Ducted Air Conditioning</option>
                           <option>Multi-Split System</option>
@@ -178,11 +186,13 @@ const [message, setMessage] = React.useState('');
                       <div className="space-y-2">
                         <label className="text-sm font-bold text-brand-navy uppercase tracking-wider ml-1">Suburb</label>
                         <input 
-                          required
-                          type="text" 
-                          placeholder="e.g. Glenelg"
-                          className="w-full px-6 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:border-brand-blue focus:bg-white outline-none transition-all"
-                        />
+  required
+  type="text" 
+  placeholder="e.g. Glenelg"
+  value={suburb}
+  onChange={(e) => setSuburb(e.target.value)}
+  className="w-full px-6 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:border-brand-blue focus:bg-white outline-none transition-all"
+/>
                       </div>
                     </div>
 
