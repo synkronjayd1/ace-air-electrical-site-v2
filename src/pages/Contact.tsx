@@ -199,10 +199,12 @@ const [message, setMessage] = React.useState('');
                     <div className="space-y-2">
                       <label className="text-sm font-bold text-brand-navy uppercase tracking-wider ml-1">Your Message</label>
                       <textarea 
-                        rows={5}
-                        placeholder="Tell us about your project or emergency..."
-                        className="w-full px-6 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:border-brand-blue focus:bg-white outline-none transition-all resize-none"
-                      ></textarea>
+  rows={5}
+  placeholder="Tell us about your project or emergency..."
+  value={message}
+  onChange={(e) => setMessage(e.target.value)}
+  className="w-full px-6 py-4 rounded-2xl bg-gray-50 border border-gray-100 focus:border-brand-blue focus:bg-white outline-none transition-all resize-none"
+></textarea>
                     </div>
 
                     <button 
