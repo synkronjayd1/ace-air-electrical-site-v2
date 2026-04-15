@@ -6,14 +6,35 @@ import { IMAGES } from '@/src/constants/images';
 export default function Contact() {
   const [formStatus, setFormStatus] = React.useState<'idle' | 'submitting' | 'success'>('idle');
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setFormStatus('submitting');
-    // Simulate API call
-    setTimeout(() => {
-      setFormStatus('success');
-    }, 1500);
-  };
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setFormStatus('submitting');
+
+  try {
+    const response = await fetch("https://n8n.synkron.com.au/webhook-test/5bb8acba-dd34-42d1-b3ec-3dc89bebfedb", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name,
+        phone,
+        suburb,
+        service,
+        message,
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error("Failed to submit");
+    }
+
+    setFormStatus('success');
+  } catch (error) {
+    console.error(error);
+    setFormStatus('error');
+  }
+};
 
   return (
     <div>
