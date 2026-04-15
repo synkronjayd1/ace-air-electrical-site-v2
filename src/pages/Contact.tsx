@@ -16,7 +16,7 @@ const [message, setMessage] = React.useState('');
   setFormStatus('submitting');
 
   try {
-    const response = await fetch("https://n8n.synkron.com.au/webhook-test/5bb8acba-dd34-42d1-b3ec-3dc89bebfedb", {
+    const response = await fetch("https://n8n.synkron.com.au/webhook/5bb8acba-dd34-42d1-b3ec-3dc89bebfedb", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
